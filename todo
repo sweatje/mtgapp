@@ -1,0 +1,21 @@
+life counter - 2 player game
+- set player name
+- reset life totals
+- decrement life buttons
+- increment life buttons
+- record life decrement
+- record turn advance
+- poison tracking
+- turn storm count
+- record notes
+- advance in match with new game
+- review prior games in match
+life counter - EDH
+- set player names
+- commander damage
+List Pricing Mode
+- accept list in text box
+- parse for number, card
+- select pricing source
+- lookup pricing and insert into list
+- add color, set, rarity
