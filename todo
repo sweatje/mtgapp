@@ -22,3 +22,16 @@ List Pricing Mode
 Proxy Mode
 - print correct sized high quality images up to nine per page
 - add optional proxy watermark
+
+
+
+done
+Hash
+- copy hash and test
+- extend to parse standard object instead of array during construction
+look at how to use http://mtgjson.com to build
+- script to cache locally
+-- save version in cache
+-- check version if different, then process
+-- parse sets file, translate to PHP, cache local
+-- grab sets data, translate to PHP, cache local
