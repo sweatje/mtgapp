@@ -18,6 +18,9 @@ class Hash implements ArrayAccess {
 	function __get($key) {
 		return $this->get($key);
 	}
+	function count() {
+		return count($this->store);
+	}
 	// next four methods for ArrayAccess interface
 	function offsetExists($key) {
 		return array_key_exists($key,$this->store);

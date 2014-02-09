@@ -39,4 +39,9 @@ class TestHashClass extends PHPUnit_Framework_TestCase {
 		$hash = new Hash($obj);
 		$this->assertEquals('val2',$hash['test2']);
 	}
+	function testHashCountMethodReturnsNumberOfHashItems() {
+		$this->hash->set('one',1);
+		$this->hash->set('two',2);
+		$this->assertEquals(2,$this->hash->count());
+	}
 }
