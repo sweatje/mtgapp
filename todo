@@ -1,3 +1,8 @@
+Card Info To Db
+- card table ddl
+- reprint table ddl
+- process cards, upsert card info
+- if reprint, upsert reprint reference
 life counter - 2 player game
 - set player name
 - reset life totals
@@ -14,6 +19,7 @@ life counter - EDH
 - set player names
 - commander damage
 List Pricing Mode
+- cli mode - accept via std in
 - accept list in text box
 - parse for number, card
 - select pricing source
@@ -22,7 +28,7 @@ List Pricing Mode
 Proxy Mode
 - print correct sized high quality images up to nine per page
 - add optional proxy watermark
-
+Interesting: http://www.yellosoft.us/proxymang/
 
 
 done
@@ -35,3 +41,6 @@ look at how to use http://mtgjson.com to build
 -- check version if different, then process
 -- parse sets file, translate to PHP, cache local
 -- grab sets data, translate to PHP, cache local
+- set table ddl
+- read set list
+- read set, upsert set info
