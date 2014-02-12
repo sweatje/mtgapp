@@ -96,7 +96,7 @@ class TestModelClasses extends PHPUnit_Framework_TestCase {
 		$model = $this->getMock('Model', array('exec'));
 		$model->expects($this->at(0))
 			->method('exec')
-			->with('select * from testtab where testid = :testid',$fields)
+			->with('select * from testtab where testid = :testid',['testid'=>1])
 			->will($this->returnValue($stmt));
 		$model->expects($this->at(1))
 			->method('exec')
@@ -115,7 +115,7 @@ class TestModelClasses extends PHPUnit_Framework_TestCase {
 		$model = $this->getMock('Model', array('exec'));
 		$model->expects($this->at(0))
 			->method('exec')
-			->with('select * from testtab where testid = :testid',$fields)
+			->with('select * from testtab where testid = :testid',['testid'=>1])
 			->will($this->returnValue($stmt));
 		$model->expects($this->at(1))
 			->method('exec')

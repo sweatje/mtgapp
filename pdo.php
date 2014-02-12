@@ -69,7 +69,6 @@ class Model {
 			$sql = sprintf(self::UPSERT_INS,$table
 				,implode(', ',array_keys($fields))
 				,':'.implode(', :',array_keys($fields)));
-			var_dump($sql,$fields);
 			$this->exec($sql,$fields);	
 		}
 	}
